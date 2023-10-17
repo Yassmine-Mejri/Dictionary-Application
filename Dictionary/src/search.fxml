@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchControler">
+  <children>
+      <AnchorPane layoutY="-1.0" prefHeight="126.0" prefWidth="633.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Label layoutX="267.0" layoutY="29.0" prefHeight="17.0" prefWidth="135.0" style="-fx-text-fill: white;" text="Chose a language">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="498.0" layoutY="14.0" mnemonicParsing="false" onAction="#backc" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 10;" text="Dictionary">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="421.0" layoutY="53.0" style="-fx-text-fill: white;" text="Number of Words">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="53.0" prefHeight="17.0" prefWidth="152.0" style="-fx-text-fill: white;" text="Search Your Word">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="listage" layoutX="31.0" layoutY="136.0" onMouseClicked="#select" prefHeight="283.0" prefWidth="572.0" style="-fx-border-color: #6495ED;">
+        <columns>
+          <TableColumn fx:id="word" prefWidth="75.0" text="Word" />
+          <TableColumn fx:id="mot" prefWidth="75.0" text="Mot" />
+            <TableColumn fx:id="type" prefWidth="81.59989929199219" text="Type" />
+            <TableColumn fx:id="expF" minWidth="0.0" prefWidth="158.40008544921875" text="Exemple Français" />
+            <TableColumn fx:id="expE" prefWidth="197.60003662109375" text="Example Englais" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="36.0" layoutY="70.0" onAction="#filtrage" prefHeight="25.0" prefWidth="213.0" promptText="Word" style="-fx-background-color: transparant; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" />
+      <RadioButton fx:id="btn1" layoutX="289.0" layoutY="53.0" mnemonicParsing="false" onAction="#btn1checked" prefHeight="18.0" prefWidth="92.0" style="-fx-text-fill: white;" text="English" />
+      <RadioButton fx:id="btn2" layoutX="289.0" layoutY="82.0" mnemonicParsing="false" onAction="#btn2checked" prefHeight="18.0" prefWidth="92.0" style="-fx-text-fill: white;" text="French" />
+      <TextField fx:id="nbrtr" layoutX="420.0" layoutY="70.0" prefHeight="25.0" prefWidth="64.0" promptText="N°:" style="-fx-background-color: transparant; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" />
+  </children>
+</Pane>

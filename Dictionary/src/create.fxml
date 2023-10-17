@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateControler">
+   <children>
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Label layoutX="42.0" layoutY="217.0" style="-fx-text-fill: white;" text="Dictionary">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="226.0" fitWidth="265.0" layoutX="37.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@book.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="usertxtcr" layoutX="73.0" layoutY="121.0" promptText="UserName" style="-fx-background-color: transparant; -fx-border-color: #6495ED; -fx-border-width: 0px 0px 3px 0px;" />
+            <PasswordField fx:id="passtxtcr" layoutX="73.0" layoutY="175.0" promptText="PassWord" style="-fx-background-color: transparant; -fx-border-color: #6495ED; -fx-border-width: 0px 0px 3px 0px;" />
+            <Button fx:id="loginbtn" layoutX="80.0" layoutY="284.0" mnemonicParsing="false" onAction="#loginbtnc" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #6495ED; -fx-text-fill: white; -fx-background-radius: 10;" text="Login As User" />
+            <Hyperlink fx:id="linklogin" layoutX="103.0" layoutY="338.0" onAction="#linkloginc" opacity="0.5" style="-fx-text-fill: black;" text="Login As User..." underline="true" />
+            <ImageView fitHeight="83.0" fitWidth="88.0" layoutX="106.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="28.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="31.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passconftxtcr" layoutX="72.0" layoutY="223.0" promptText="Confirm PassWord" style="-fx-background-color: transparant; -fx-border-color: #6495ED; -fx-border-width: 0px 0px 3px 0px;" />
+            <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="30.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@confpass.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserControler">
+   <children>
+      <TextArea fx:id="disc" layoutX="125.0" layoutY="221.0" prefHeight="127.0" prefWidth="290.0" style="-fx-border-color: #6495ED;" />
+      <TextField fx:id="word" layoutX="253.0" layoutY="137.0" promptText="Word" style="-fx-border-color: #6495ED; -fx-background-color: transparant; -fx-border-width: 0px 0px 3px 0px;" />
+      <RadioButton fx:id="btnE" layoutX="174.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnEc" text="English" />
+      <RadioButton fx:id="btnF" layoutX="328.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnFc" text="French" />
+      <Button fx:id="backc" layoutX="422.0" layoutY="18.0" mnemonicParsing="false" onAction="#backc" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #6495ED; -fx-text-fill: white; -fx-background-radius: 10;" text="Listage">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="138.0" layoutY="140.0" text="Enter Your Word">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="34.0" text="Dictionary">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="-5.0" prefHeight="406.0" prefWidth="114.0" style="-fx-background-color: #6495ED;" />
+      <Button fx:id="logoutbtn" layoutX="422.0" layoutY="60.0" mnemonicParsing="false" onAction="#logoutbtnc" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #6495ED; -fx-text-fill: white; -fx-background-radius: 10;" text="LogOut">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

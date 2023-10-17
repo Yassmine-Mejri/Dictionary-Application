@@ -1,0 +1,3 @@
+see,voir,verbe,he cant see nothing,il ne voit rien,
+book,livre,nom,i read a book,j'ai lu un livre,
+friendship,amitié,nom,friendship is the best,j'aime l'amitié,
